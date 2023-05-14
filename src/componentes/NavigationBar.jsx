@@ -10,13 +10,9 @@ const NavigationBar = () => {
     </Link>
   </div>
         <div className="">
-            <h2 className='mr-6'>SHOP</h2>
-        </div>
-        <div className="mr-6">
-            <h2>CONTACT</h2>
-        </div>
-        <div className="mr-6">
-            <h2>SIGN IN</h2>
+          <Link to="/shop" className="btn btn-ghost normal-case text-xl mr-1">SHOP</Link>
+          <Link to="/contact" className="btn btn-ghost normal-case text-xl mr-1">CONTACT</Link>
+          <Link to="/signin" className="btn btn-ghost normal-case text-xl mr-1">SIGNUP</Link>
         </div>
   <div className="flex-none">
     <div className="dropdown dropdown-end">
