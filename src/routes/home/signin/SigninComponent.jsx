@@ -2,16 +2,16 @@ import React from 'react'
 import NavigationBar from '../../../componentes/NavigationBar'
 
 
-import { signInWithGooglePopup, createuserDocumentFromAuth, signInWithGoogleRedirect, } from '../../../../datebase/date.firebase' 
+import { signInWithGooglePopup, createUserDocumentFromAuth, signInWithGoogleRedirect, } from '../../../../datebase/date.firebase' 
  
-import SigninForm from '../../../componentes/signin-form/Signin-form'
+import SigninForm from '../../../componentes/signin-form/Signup-form'
 
 
 const SigninComponent = () => {
   
   const handlGoogleSignIn = async () => {
    const {user} = await signInWithGooglePopup();
-   const userDocRef= await createuserDocumentFromAuth(user)
+   const userDocRef= await createUserDocumentFromAuth(user)
   }
  
   return (
